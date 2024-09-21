@@ -1,0 +1,32 @@
+.top_box{
+width: 450px;
+  height: 95px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  background-color: azure; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.input_value{
+  background: transparent;
+  border: none;
+  background-color: antiquewhite;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+  /* gap: 10px; */
+}
+.select_curr{
+  width: 100px;
+  margin-right: 20px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}

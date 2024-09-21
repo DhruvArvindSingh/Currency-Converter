@@ -1,42 +1,98 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+.main_body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+}
+.outer_box{
+  width: 550px;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.inner_box{
+   width: 500px;
+  height: 300px;
+  background-color: rgb(223, 73, 73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  flex-direction: column;
+
+}
+.top_box,.middle_box{
+  width: 450px;
+  height: 95px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  background-color: azure; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.swap_btn{
+  position: absolute;
+  /* top: 10px; */
+  left: 200px;
+  bottom:-20px;
+  width: 60px;
+  height:35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  border: 1px solid black;
+  /* top: ;  */
+  z-index: 2;
+}
+.input_value{
+  background: transparent;
+  border: none;
+  background-color: antiquewhite;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+  /* gap: 10px; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom_box{
+  width: 425px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: rgb(2, 101, 239); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 525;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.select_curr{
+  width: 100px;
+  margin-right: 20px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
 }
